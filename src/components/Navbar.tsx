@@ -1,15 +1,18 @@
 import { useState } from "react";
 import "../styles/Navbar.css";
 import hamburger from "../icons/hamburger.svg";
+import { Link, Outlet } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
     <nav className="navigation">
-      <a href="/" className="brand-name">
+      <Link to="" className="main-name">
         Micah Beech
-      </a>
+      </Link>
+
       <button 
         className="hamburger"
         onClick={() => {
@@ -25,16 +28,16 @@ function Navbar() {
       >
         <ul>
           <li>
-            <a href="/about">About</a>
+            <HashLink smooth to="/#about">About</HashLink>
           </li>
           <li>
-            <a href="/resume">Resume</a>
+            <HashLink smooth to="/#resume">Resume</HashLink>
           </li>
           <li>
-            <a href="/projects">Projects</a>
+            <HashLink smooth to="/#projects">Projects</HashLink>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <HashLink smooth to="/#contact">Contact</HashLink>
           </li>
         </ul>
       </div>
