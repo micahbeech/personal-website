@@ -8,19 +8,19 @@ import Home from './Home';
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <div className="App">
+      <Navbar/>
 
-      <Home />
+      <div className="card"><Home/></div>
 
-      <Work />
+      <div className="card"><Work/></div>
 
-      <Projects />
+      <div className="card"><Projects/></div>
 
-      <Education />
+      <div className="card"><Education/></div>
 
-      <Contact />
-    </>
+      <div className="card"><Contact/></div>
+    </div>
   );
 }
 

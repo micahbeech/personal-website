@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import logo from "../icons/profile-pic.jpg";
 import "../styles/Home.css";
-import "../styles/Section.css" ;
-import "../styles/Image.css";
+import "../styles/Section.css";
 
 function Home() {
   return (
@@ -34,7 +33,7 @@ function AboutHeader() {
   useEffect(() => setText(identifiers[index % identifiers.length]), [index])
 
   return (
-    <h1 key={text} className="about-header">{text}.</h1>
+    <h1 key={text} className="header">{text}.</h1>
   );
 }
 

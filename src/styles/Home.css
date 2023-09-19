@@ -9,21 +9,21 @@ section.home {
   justify-content: flex-start;
   width: 100%;
   padding-left: 20%;
-}
 
-.about div.content {
-  padding-left: 20px;
-}
+  .content {
+    padding-left: 20px;
 
-.description {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.about-header {
-  animation: fadeinout 3s;
-  display: flex;
-  justify-content: flex-start;
+    .description {
+      display: flex;
+      justify-content: flex-start;
+    }
+    
+    .header {
+      animation: fadeinout 3s;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
 }
 
 @keyframes fadeinout {
