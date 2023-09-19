@@ -6,7 +6,7 @@ import "../styles/Image.css";
 
 function Home() {
   return (
-    <section className="home">
+    <section id="home" className="home">
       <div className="about">
         <img src={logo} className="rounded" alt="Profile" width="300"/>
 

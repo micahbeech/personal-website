@@ -1,7 +1,7 @@
 import '../styles/App.css';
 import Navbar from './Navbar';
-import About from './About';
-import Resume from './Resume';
+import Work from './Work';
+import Education from './Education';
 import Projects from './Projects';
 import Contact from './Contact';
 import Home from './Home';
@@ -13,13 +13,13 @@ function App() {
 
       <Home />
 
-      <section id="about"><About /></section>
+      <Work />
 
-      <section id="resume"><Resume /></section>
+      <Projects />
 
-      <section id="projects"><Projects /></section>
+      <Education />
 
-      <section id="contact"><Contact /></section>
+      <Contact />
     </>
   );
 }

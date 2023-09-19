@@ -1,6 +1,8 @@
 function Contact() {
   return (
-    <div>Contact</div>
+    <section id="contact" className="contact">
+      <div>Contact</div>
+    </section>
   );
 }
 
