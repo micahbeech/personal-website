@@ -65,7 +65,7 @@ const jobs = [
 
 function Work() {
   return (
-    <section id="work">
+    <section id="work" className="work">
       <div className="scrolling-wrapper">
         {jobs.map((job) => {
           return (
