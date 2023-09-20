@@ -26,7 +26,7 @@ function AboutHeader() {
   const [text, setText] = useState(identifiers[index]);
 
   useEffect(() => {
-    const interval = setInterval(() => { setIndex(i => i + 1); }, 3000);
+    const interval = setInterval(() => { setIndex(i => i + 1); }, 4000);
     return () => clearInterval(interval);
   }, []);
 
