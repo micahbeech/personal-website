@@ -1,12 +1,10 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'FrankoLight';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: rgb(239,250,255);
-  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(190,234,255,1) 10%, rgba(255,255,255,1) 70%);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 2%, rgba(190,234,255,1) 10%, rgba(255,255,255,1) 70%);
 }
 
 .rounded {

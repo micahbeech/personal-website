@@ -17,6 +17,8 @@
       animation: fadeinout 4s;
       display: flex;
       justify-content: flex-start;
+      z-index: 1;
+      margin-left: 0px;
     }
   }
 }

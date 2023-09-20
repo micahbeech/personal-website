@@ -1,24 +1,17 @@
-import { useState } from "react";
 import "../styles/Navbar.css";
-import hamburger from "../icons/hamburger.svg";
 import { HashLink } from "react-router-hash-link";
+import profile from '../icons/profile-pic.jpg';
 
 function Navbar() {
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
-
   return (
     <nav className="navigation">
-      <HashLink smooth to="/#home" className="main-name">
-        Micah Beech
+      <HashLink smooth to="/#home" className="header">
+        <img src={profile} className="logo"/>
+
+        <p className="name">Micah Beech</p>
       </HashLink>
 
-      <button 
-        className="hamburger"
-        onClick={() => setIsNavExpanded(!isNavExpanded)}
-      >
-        <img src={hamburger} alt="Hamburger menu"/>
-      </button>
-      <div className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
+      <div className="navigation-menu">
         <ul>
           <li>
             <HashLink smooth to="/#work">Work</HashLink>
