@@ -58,13 +58,15 @@
   .dot {
     height: 10px;
     width: 10px;
-    background-color: #d4d4d4;
+    background: rgb(242,242,242);
+    background: linear-gradient(135deg, rgba(242,242,242,1) 0%, rgba(212,212,212,1) 100%);
     border-radius: 50%;
     display: inline-block;
   }
 
   .dot.highlighted {
-    background-color: #7a7a7a;
+    background: rgb(212,212,212);
+    background: linear-gradient(135deg, rgba(212,212,212,1) 0%, rgba(122,122,122,1) 100%);
   }
 }
 
