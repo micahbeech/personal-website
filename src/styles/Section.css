@@ -7,7 +7,7 @@ section {
   align-items: center;
 }
 
-section.home {
+/* section.home {
   background: rgb(136,214,252);
   background: linear-gradient(180deg, rgba(136,214,252,1) 0%, rgba(246,213,168,1) 100%);
 }
@@ -29,4 +29,4 @@ section.education {
 
 section.contact {
   background: rgb(255,255,255);
-}
+} */

@@ -59,13 +59,13 @@
   background-color: #2642af;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 300px) {
   .hamburger {
     display: block;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 300px) {
   .navigation-menu ul {
     position: absolute;
     top: 60px;

@@ -8,6 +8,7 @@ const jobs = [
     id: "faire",
     name: "Faire",
     logo: faire,
+    date: "2021 - Present",
     items: [
       {
         title: "Platform Engineer",
@@ -27,6 +28,7 @@ const jobs = [
     id: "cwc",
     name: "Code With Chris",
     logo: codeWithChris,
+    date: "2021 Internship",
     items: [
       {
         title: "Thing I Did",
@@ -46,6 +48,7 @@ const jobs = [
     id: "vital",
     name: "Vital Images",
     logo: vitalImages,
+    date: "2020 Internship",
     items: [
       {
         title: "Thing I Did",
@@ -71,6 +74,8 @@ function Work() {
           return (
             <div className="card" id={job.id}>
               <img src={job.logo} className="rounded logo" alt={job.name}/>
+
+              <b className="subtitle">{job.date}</b>
     
               <div className="content">
                 {job.items.map((item) => {
