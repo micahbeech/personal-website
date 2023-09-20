@@ -2,8 +2,22 @@ import '../styles/Work.css';
 import faire from '../icons/faire.avif';
 import codeWithChris from '../icons/codewithchris.jpeg';
 import vitalImages from '../icons/vital.jpeg';
+import { useEffect, useState } from 'react';
 
-const jobs = [
+type JobItem = {
+  title: string;
+  description: string;
+}
+
+type Job = {
+  id: string;
+  name: string;
+  logo: string;
+  date: string;
+  items: JobItem[];
+}
+
+const jobs: Job[] = [
   {
     id: "faire",
     name: "Faire",
@@ -11,7 +25,7 @@ const jobs = [
     date: "2021 - Present",
     items: [
       {
-        title: "Platform Engineer",
+        title: "Security Mitigation",
         description: "Really cool stuff",
       },
       {
@@ -67,37 +81,61 @@ const jobs = [
 ]
 
 function Work() {
+  const [jobId, setJobId] = useState(jobs[0].id);
+
   return (
     <section id="work" className="work">
-      <div className="scrolling-wrapper">
-        {jobs.map((job) => {
-          return (
-            <div className="card" id={job.id}>
-              <img src={job.logo} className="rounded logo" alt={job.name}/>
+      <div className="switcher">
+        <div className="scrolling-wrapper">
+          {jobs.map((job) => { return (<JobCard job={job} setId={() => setJobId(job.id)}/>); })}
+        </div>
 
-              <b className="subtitle">{job.date}</b>
-    
-              <div className="content">
-                {job.items.map((item) => {
-                  return (
-                    <div className="item">
-                      <h2>{item.title}</h2>
-                      <p>{item.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-    
-              <div className="dot-switcher">
-                {jobs.map((dotJob) => {
-                  return (<span className={job.id === dotJob.id ? "dot highlighted" : "dot"}/>);
-                })}
-              </div>
+        <div className="dot-switcher">
+          {jobs.map((dotJob) => {
+            return (<span className={jobId === dotJob.id ? "dot highlighted" : "dot"}/>);
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+interface JobProps {
+  job: Job;
+  setId: () => void;
+}
+
+function JobCard({job, setId}: JobProps) {
+  useEffect(() => {
+    const element = document.getElementById(job.id);
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) setId();
+    });
+
+    if (element) observer.observe(element);
+
+    return () => observer.disconnect();
+  // eslint-disable-next-line
+  }, [job]);
+
+  return (
+    <div key={job.id} className="card" id={job.id}>
+      <img src={job.logo} className="rounded logo" alt={job.name}/>
+
+      <b className="subtitle">{job.date}</b>
+
+      <div className="content">
+        {job.items.map((item: any) => {
+          return (
+            <div className="item">
+              <h2>{item.title}</h2>
+              <p>{item.description}</p>
             </div>
           );
         })}
       </div>
-    </section>
+    </div>
   );
 }
 

@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="navigation">
       <HashLink smooth to="/#home" className="header">
-        <img src={profile} className="logo"/>
+        <img src={profile} className="logo" alt="Profile"/>
 
         <p className="name">Micah Beech</p>
       </HashLink>

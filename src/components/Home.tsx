@@ -7,33 +7,34 @@ function Home() {
   return (
     <section id="home" className="home">
       <div className="about">
-        <img src={logo} className="rounded" alt="Profile" width="300"/>
+        <img src={logo} className="rounded" alt="Profile" width="300" height="300"/>
 
         <div className="content">
+          <h1>Micah Beech</h1>
+
           <AboutHeader/>
 
-          <p className="description">Something about me</p>
+          <p>Industry experience in DevOps, server side, and mobile development.</p>
+          <p>Building efficient, high-quality, and secure software at scale.</p>
         </div>
       </div>
     </section>
   );
 }
 
-const identifiers = ['Big Cock Daddy', 'CS Loser', 'Cutie'];
+const identifiers = ['Full Stack Developer', 'Computer Science Graduate', 'Problem Solver'];
 
 function AboutHeader() {
   const [index, setIndex] = useState(0);
-  const [text, setText] = useState(identifiers[index]);
+  const text = identifiers[index % identifiers.length];
 
   useEffect(() => {
     const interval = setInterval(() => { setIndex(i => i + 1); }, 4000);
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => setText(identifiers[index % identifiers.length]), [index])
-
   return (
-    <h1 key={text} className="header">{text}.</h1>
+    <i key={text} className="header">{text}.</i>
   );
 }
 
