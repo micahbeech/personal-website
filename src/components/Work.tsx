@@ -68,62 +68,56 @@ const jobs = [
 ]
 
 function Work() {
+  const [skipIter, setSkipIter] = useState(false);
+  const [jobIndex, setJobIndex] = useState(0);
+  const job = jobs[jobIndex];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (skipIter) {
+        setSkipIter(false);
+      } else {
+        setJobIndex(i => (i + 1) % jobs.length);
+      }
+    }, 10000);
+    return () => clearInterval(interval);
+  });
+
   return (
     <section id="work" className="work">
       <div className="switcher">
         <div className="scrolling-wrapper">
-          {jobs.map((job) => {
-            return (
-              <div key={job.id} className="card" id={job.id}>
-                <img src={job.logo} className="rounded logo" alt={job.name}/>
-          
-                <b className="subtitle">{job.date}</b>
-          
-                <div className="content">
-                  {job.items.map((item) => {
-                    return (
-                      <div className="item">
-                        <h2>{item.title}</h2>
-                        <p>{item.description}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            ); 
-          })}
+          <div key={job.id} className="card" id={job.id}>
+            <img src={job.logo} className="rounded logo" alt={job.name}/>
+      
+            <b className="subtitle">{job.date}</b>
+      
+            <div className="content">
+              {job.items.map((item) => {
+                return (
+                  <div className="item">
+                    <h2>{item.title}</h2>
+                    <p>{item.description}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
 
-        <DotSwitcher/>
+        <div className="dot-switcher">
+          {jobs.map((dotJob, dotJobIndex) => {
+            return (
+              <button 
+                key={dotJob.id} 
+                className={job.id === dotJob.id ? "dot highlighted" : "dot"} 
+                onClick={() => { setSkipIter(true); setJobIndex(dotJobIndex); }}
+              />
+            );
+          })}
+        </div>
       </div>
     </section>
-  );
-}
-
-function DotSwitcher() {
-  const [jobId, setJobId] = useState(jobs[0].id);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) setJobId(entry.target.id);
-      });
-    });
-
-    jobs.forEach((job) => {
-      const element = document.getElementById(job.id);
-      if (element) observer.observe(element);
-    })
-
-    return () => observer.disconnect();
-  });
-
-  return (
-    <div className="dot-switcher">
-      {jobs.map((dotJob) => {
-        return (<span key={dotJob.id} className={jobId === dotJob.id ? "dot highlighted" : "dot"}/>);
-      })}
-    </div>
   );
 }
 
