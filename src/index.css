@@ -3,10 +3,16 @@ body {
   font-family: 'FrankoLight';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(239,250,255);
   background: linear-gradient(180deg, rgba(255,255,255,1) 2%, rgba(190,234,255,1) 10%, rgba(255,255,255,1) 70%);
 }
 
 .rounded {
   border-radius: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 40%);
 }

@@ -19,7 +19,7 @@
       display: none;
     }
   
-    .card {
+    .content {
       flex: 0 0 auto;
       width: 90%;
       margin: 5%;
@@ -36,18 +36,14 @@
         padding-bottom: 40px;
       }
   
-      .content {
+      .items {
         display: flex;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 40px;
   
-        .item {
-          background-color: white;
-          border-radius: 10px;
-          padding-left: 20px;
-          padding-right: 20px;
+        .card {
           width: 240px;
           height: 180px;
         }
