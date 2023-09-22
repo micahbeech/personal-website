@@ -9,19 +9,29 @@ const jobs = [
     id: "faire",
     name: "Faire",
     logo: faire,
+    url: "https://www.faire.com/",
     date: "2021 - Present",
     items: [
       {
-        title: "Security Mitigation",
-        description: "Really cool stuff",
+        title: "DevOps",
+        descriptions: [
+          "Pipeline development, maintenance, and security.",
+          "Experience with Docker, Gradle, and NPM registries.",
+        ],
       },
       {
-        title: "Backend Engineer",
-        description: "Really cool stuff",
+        title: "API Development",
+        descriptions: [
+          "RESTful APIs, backend services, and database schema.",
+          "Design and implementation across the SDLC.",
+        ],
       },
       {
-        title: "iOS Engineer",
-        description: "Really cool stuff",
+        title: " iOS",
+        descriptions: [
+          "Native Swift development on a small team of scrappy engineers.",
+          "Experience with SwiftUI, UIKit, Combine, and Universal Links."
+        ],
       },
     ]
   },
@@ -29,19 +39,27 @@ const jobs = [
     id: "cwc",
     name: "Code With Chris",
     logo: codeWithChris,
+    url: "https://codewithchris.com/",
     date: "2021 Internship",
     items: [
       {
-        title: "Thing I Did",
-        description: "Really cool stuff",
+        title: "Mobile App Design",
+        descriptions: [
+          "Envisioning, designing, and building apps from the ground up.",
+        ],
       },
       {
-        title: "Thing I Did",
-        description: "Really cool stuff",
+        title: "iOS Frameworks",
+        descriptions: [
+          "State-of-the-art APIs.",
+          "Core Data, Core ML, MapKit, Firebase, Google Sign-In, and the YouTube API.",
+        ],
       },
       {
-        title: "Thing I Did",
-        description: "Really cool stuff",
+        title: "Content Creation",
+        descriptions: [
+          "Writing and recording course content for online iOS courses.",
+        ],
       },
     ]
   },
@@ -49,19 +67,28 @@ const jobs = [
     id: "vital",
     name: "Vital Images",
     logo: vitalImages,
+    url: "https://www.mi.medical.canon/",
     date: "2020 Internship",
     items: [
       {
-        title: "Thing I Did",
-        description: "Really cool stuff",
+        title: "Full Stack Engineering",
+        descriptions: [
+          "Server-side development in Java, Cassandra, and Elasticsearch.",
+          "Admin tooling built using Angular.",
+        ],
       },
       {
-        title: "Thing I Did",
-        description: "Really cool stuff",
+        title: "Healthcare Innovation",
+        descriptions: [
+          "Cutting-edge healthcare technology.",
+          "DICOM and HL7 communication protocols.",
+        ],
       },
       {
-        title: "Thing I Did",
-        description: "Really cool stuff",
+        title: "End-to-End Testing",
+        descriptions: [
+          "Assisted the QA team with E2E and regression testing to meet a crucial deadline.",
+        ],
       },
     ]
   }
@@ -75,6 +102,8 @@ function Work() {
   useEffect(() => {
     const interval = setInterval(() => {
       if (skipIter) {
+        // The index was changed manually,
+        // so don't auto-rotate the job for another iteration of the timer
         setSkipIter(false);
       } else {
         setJobIndex(i => (i + 1) % jobs.length);
@@ -88,8 +117,10 @@ function Work() {
       <div className="switcher">
         <div className="scrolling-wrapper">
           <div key={job.id} className="card" id={job.id}>
-            <img src={job.logo} className="rounded logo" alt={job.name}/>
-      
+            <a href={job.url} target="_blank" rel="noreferrer">
+              <img src={job.logo} className="rounded logo" alt={job.name}/>
+            </a>
+            
             <b className="subtitle">{job.date}</b>
       
             <div className="content">
@@ -97,7 +128,9 @@ function Work() {
                 return (
                   <div className="item">
                     <h2>{item.title}</h2>
-                    <p>{item.description}</p>
+                    {item.descriptions.map((description) => { 
+                      return (<p>{description}</p>);
+                    })}
                   </div>
                 );
               })}

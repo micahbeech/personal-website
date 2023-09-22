@@ -5,9 +5,9 @@ import "../styles/Section.css";
 
 function Home() {
   return (
-    <section id="home" className="home">
+    <section id="about" className="home">
       <div className="about">
-        <img src={logo} className="rounded" alt="Profile" width="300" height="300"/>
+        <img src={logo} className="rounded" alt="Profile" width="360" height="360"/>
 
         <div className="content">
           <h1>Micah Beech</h1>
@@ -22,14 +22,21 @@ function Home() {
   );
 }
 
-const identifiers = ['Full Stack Developer', 'Computer Science Graduate', 'Problem Solver'];
+const identifiers = [
+  'Software Developer', 
+  'Computer Science Graduate', 
+  'Community Theatre Actor',
+  'Rock Climber',
+  'Hockey Player',
+  'Chorister',
+];
 
 function AboutHeader() {
   const [index, setIndex] = useState(0);
   const text = identifiers[index % identifiers.length];
 
   useEffect(() => {
-    const interval = setInterval(() => { setIndex(i => i + 1); }, 4000);
+    const interval = setInterval(() => setIndex(i => i + 1), 4000);
     return () => clearInterval(interval);
   }, []);
 
