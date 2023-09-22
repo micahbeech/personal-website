@@ -16,6 +16,7 @@ function Home() {
 
           <p>Industry experience in DevOps, server side, and mobile development.</p>
           <p>Building efficient, high-quality, and secure software at scale.</p>
+          <p>Singing, acting, climbing, and hanging out with friends in my free time.</p>
         </div>
       </div>
     </section>

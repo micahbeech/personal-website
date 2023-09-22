@@ -5,27 +5,3 @@ section {
   justify-content: center;
   align-items: center;
 }
-
-/* section.home {
-  background: rgb(136,214,252);
-  background: linear-gradient(180deg, rgba(136,214,252,1) 0%, rgba(246,213,168,1) 100%);
-}
-
-section.work {
-  background: rgb(246,213,168);
-  background: linear-gradient(180deg, rgba(246,213,168,1) 0%, rgba(255,156,184,1) 100%);
-}
-
-section.projects {
-  background: rgb(255,156,184);
-  background: linear-gradient(180deg, rgba(255,156,184,1) 0%, rgba(109,160,247,1) 100%);
-}
-
-section.education {
-  background: rgb(109,160,247);
-  background: linear-gradient(180deg, rgba(109,160,247,1) 0%, rgba(255,255,255,1) 100%);
-}
-
-section.contact {
-  background: rgb(255,255,255);
-} */

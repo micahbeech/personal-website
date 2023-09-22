@@ -5,7 +5,9 @@ function Education() {
   return (
     <section id="education" className="education">
       <div className="container">
-        <img src={waterloo} className="logo" alt="University of Waterloo"/>
+        <a href="https://cs.uwaterloo.ca/" target="_blank" rel="noreferrer">
+          <img src={waterloo} className="rounded logo" alt="University of Waterloo"/>
+        </a>
 
         <div className="content">
           <h1>Bachelor of Computer Science</h1>
