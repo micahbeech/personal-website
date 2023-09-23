@@ -2,6 +2,11 @@ import '../styles/Projects.css';
 
 const projects = [
   {
+    title: "House Sharing",
+    language: "Kotlin",
+    description: "Content",
+  },
+  {
     title: "Neighbourhood Garden",
     language: "Swift",
     description: "Content",

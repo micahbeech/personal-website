@@ -115,26 +115,24 @@ function Work() {
   return (
     <section id="work" className="work">
       <div className="switcher">
-        <div className="scrolling-wrapper">
-          <div key={job.id} className="content" id={job.id}>
-            <a href={job.url} target="_blank" rel="noreferrer">
-              <img src={job.logo} className="rounded logo" alt={job.name}/>
-            </a>
-            
-            <b className="subtitle">{job.date}</b>
-      
-            <div className="items">
-              {job.items.map((item) => {
-                return (
-                  <div className="card">
-                    <h2>{item.title}</h2>
-                    {item.descriptions.map((description) => { 
-                      return (<p>{description}</p>);
-                    })}
-                  </div>
-                );
-              })}
-            </div>
+        <div key={job.id} className="content" id={job.id}>
+          <a href={job.url} target="_blank" rel="noreferrer">
+            <img src={job.logo} className="rounded logo" alt={job.name}/>
+          </a>
+          
+          <b className="subtitle">{job.date}</b>
+    
+          <div className="items">
+            {job.items.map((item) => {
+              return (
+                <div className="card">
+                  <h2>{item.title}</h2>
+                  {item.descriptions.map((description) => { 
+                    return (<p>{description}</p>);
+                  })}
+                </div>
+              );
+            })}
           </div>
         </div>
 

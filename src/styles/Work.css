@@ -5,55 +5,38 @@
   align-items: center;
   width: 100%;
   height: 100%;
-
-  .scrolling-wrapper {
+  
+  .content {
+    margin: 5%;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    overflow-x: auto;
-    width: 100%;
-  
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    &::-webkit-scrollbar {
-      display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    flex-direction: column;
+    animation: fadein 1s;
+
+    .subtitle {
+      padding-top: 10px;
+      padding-bottom: 40px;
     }
-  
-    .content {
-      flex: 0 0 auto;
-      width: 90%;
-      margin: 5%;
-      scroll-snap-align: center;
+
+    .items {
       display: flex;
       justify-content: center;
-      align-items: center;
-      text-align: start;
-      flex-direction: column;
-      animation: fadein 1s;
-  
-      .subtitle {
-        padding-top: 10px;
-        padding-bottom: 40px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 40px;
+
+      .card {
+        width: 240px;
+        height: 180px;
       }
-  
-      .items {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 40px;
-  
-        .card {
-          width: 240px;
-          height: 180px;
-        }
-      }
-  
-      .logo {
-        object-fit: cover;
-        width: 400px;
-        height: 200px;
-      }
+    }
+
+    .logo {
+      object-fit: cover;
+      width: 400px;
+      height: 200px;
     }
   }
 
