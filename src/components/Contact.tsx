@@ -27,7 +27,7 @@ function Contact() {
       <div className="contacts">
         {contacts.map((contact) => {
           return (
-            <a href={contact.link} target="_blank" rel="noreferrer">
+            <a href={contact.link}>
               <img src={contact.image} className="contact" alt={contact.text}></img>
             </a>
           );

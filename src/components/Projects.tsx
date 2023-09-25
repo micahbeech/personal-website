@@ -60,7 +60,7 @@ function Projects() {
                   <span>
                     <span className="vertical-separator"/>
 
-                    <a href={project.link} target="_blank" rel="noreferrer">
+                    <a href={project.link}>
                       <img src={link} className="link" alt="Link"/>
                     </a>
                   </span>

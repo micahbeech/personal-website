@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   gap: 80px;
-  margin-top: 80px;
+  margin: 80px;
 
   .contact {
     width: 100px;

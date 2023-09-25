@@ -116,7 +116,7 @@ function Work() {
     <section id="work" className="work">
       <div className="switcher">
         <div key={job.id} className="content" id={job.id}>
-          <a href={job.url} target="_blank" rel="noreferrer">
+          <a href={job.url}>
             <img src={job.logo} className="rounded logo" alt={job.name}/>
           </a>
           
