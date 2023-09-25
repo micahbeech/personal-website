@@ -125,10 +125,10 @@ function Work() {
           <div className="items">
             {job.items.map((item) => {
               return (
-                <div className="card rounded">
+                <div key={item.title} className="card rounded">
                   <h2>{item.title}</h2>
                   {item.descriptions.map((description) => { 
-                    return (<p>{description}</p>);
+                    return (<p key={description}>{description}</p>);
                   })}
                 </div>
               );

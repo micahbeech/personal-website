@@ -1,4 +1,3 @@
-import '../styles/App.css';
 import Navbar from './Navbar';
 import Work from './Work';
 import Education from './Education';

@@ -78,7 +78,7 @@ function Education() {
         <div className="content">
           {courses.map((course) => {
             return (
-              <a href={course.link}>
+              <a key={course.name} href={course.link}>
                 <div className="rounded card">
                   <h4>{course.name} ({course.code})</h4>
                   <i>{course.term}</i>

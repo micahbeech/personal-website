@@ -48,7 +48,7 @@ function Projects() {
       <div className="container">
         {projects.map((project) => {
           return (
-            <div className="project rounded">
+            <div key={project.title} className="project rounded">
               <div className="card">
                 <h1 className="header">{project.title}</h1>
                 
@@ -67,7 +67,7 @@ function Projects() {
                 }
 
                 {project.descriptions.map((description) => {
-                  return (<p>{description}</p>);
+                  return (<p key={description}>{description}</p>);
                 })}
               </div>
 
