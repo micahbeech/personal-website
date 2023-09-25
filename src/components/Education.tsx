@@ -72,21 +72,21 @@ function Education() {
             <p>Diploma in French Language I</p>
           </div>
         </div>
+
+        <h3>Selected Coursework</h3>
         
         <div className="content">
-          <h3>Selected Coursework</h3>
-          
-          <ul>
-            {courses.map((course) => {
-              return (
-                <li>
-                  <a href={course.link}>
-                    {course.name} ({course.code}), <i>{course.term}</i>. Grade: {course.grade}%
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+          {courses.map((course) => {
+            return (
+              <a href={course.link}>
+                <div className="rounded card">
+                  <h4>{course.name} ({course.code})</h4>
+                  <i>{course.term}</i>
+                  <p>Grade: {course.grade}%</p>
+                </div>
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -31,7 +31,18 @@
   margin-left: 40px;
   margin-right: 40px;
 
-  .content li {
-    margin-bottom: 10px;
+  .content {
+    display: grid;
+    justify-items: center;
+    gap: 40px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr) );
+
+    .card {
+      width: 180px;
+      background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(252,252,252,1) 100%);
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
   }
 }
