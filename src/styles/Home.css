@@ -1,17 +1,17 @@
 .about {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  flex-wrap: wrap;
   margin: 40px;
+  margin-top: 80px;
   gap: 40px;
 
   .content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 50%;
     
     .header {
       animation: fadeinout 4s;

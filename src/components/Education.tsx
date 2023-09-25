@@ -4,7 +4,7 @@ import waterloo from '../icons/waterloo.png';
 function Education() {
   return (
     <section id="education" className="education">
-      <div className="container">
+      <div className="horizontal-container">
         <a href="https://cs.uwaterloo.ca/" target="_blank" rel="noreferrer">
           <img src={waterloo} className="rounded logo" alt="University of Waterloo"/>
         </a>
