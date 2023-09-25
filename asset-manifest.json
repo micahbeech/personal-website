@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.67d4488d.css",
+    "main.js": "/static/js/main.d67fc29d.js",
+    "static/media/profile-pic.jpg": "/static/media/profile-pic.365219c8908cca682918.jpg",
+    "static/media/hitron.png": "/static/media/hitron.82025fb28b44b78c57bf.png",
+    "static/media/vegetables.webp": "/static/media/vegetables.6bef61c7ded7016d5427.webp",
+    "static/media/house.jpeg": "/static/media/house.f427917f6e77cdd54a57.jpeg",
+    "static/media/waterloo.png": "/static/media/waterloo.f6ad05ba3d2f1cfe15b0.png",
+    "static/media/codewithchris.jpeg": "/static/media/codewithchris.69b99adbbca8b7a705cf.jpeg",
+    "static/media/vital.jpeg": "/static/media/vital.cd086b65339746971c36.jpeg",
+    "static/media/email.jpeg": "/static/media/email.c726544795961ea6f7c5.jpeg",
+    "static/media/faire.avif": "/static/media/faire.fae0af9f7f444b59e1c4.avif",
+    "static/media/linkedin.avif": "/static/media/linkedin.5c5bc1c15f4c057a562a.avif",
+    "index.html": "/index.html",
+    "main.67d4488d.css.map": "/static/css/main.67d4488d.css.map",
+    "main.d67fc29d.js.map": "/static/js/main.d67fc29d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67d4488d.css",
+    "static/js/main.d67fc29d.js"
+  ]
+}
