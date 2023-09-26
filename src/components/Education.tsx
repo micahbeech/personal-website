@@ -55,7 +55,7 @@ const courses = [
 
 function Education() {
   return (
-    <section id="education" className="education">
+    <section id="education">
       <div className="vertical-container">
         <div className="horizontal-container">
           <a href="https://cs.uwaterloo.ca/">

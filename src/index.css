@@ -4,6 +4,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(180deg, rgba(255,255,255,1) 2%, rgba(190,234,255,1) 10%, rgba(255,255,255,1) 60%);
+  scroll-snap-type: y mandatory;
+}
+
+html {
+  scroll-snap-type: y mandatory;
 }
 
 .rounded {

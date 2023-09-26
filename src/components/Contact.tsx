@@ -23,7 +23,7 @@ const contacts = [
 
 function Contact() {
   return (
-    <section id="contact" className="contact">
+    <section id="contact">
       <div className="contacts">
         {contacts.map((contact) => {
           return (

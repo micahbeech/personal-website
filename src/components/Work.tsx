@@ -113,7 +113,7 @@ function Work() {
   });
 
   return (
-    <section id="work" className="work">
+    <section id="work">
       <div className="switcher">
         <div key={job.id} className="content" id={job.id}>
           <a href={job.url}>
