@@ -5,7 +5,7 @@ import profile from '../icons/profile-pic.jpg';
 function Navbar() {
   return (
     <nav className="navigation">
-      <HashLink smooth to="/#about" className="header">
+      <HashLink smooth to="/#about" className="header hbox">
         <img src={profile} className="logo" alt="Profile"/>
 
         <p className="name">Micah Beech</p>

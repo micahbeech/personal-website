@@ -16,13 +16,6 @@ const courses = [
     grade: "82",
     link: "https://cs.uwaterloo.ca/~ppoupart/teaching/cs486-spring23/",
   },
-  // {
-  //   name: "Introduction to Computer Graphics",
-  //   code: "CS 488",
-  //   term: "Spring 2023",
-  //   grade: "68",
-  //   link: "https://cs.uwaterloo.ca/~thachisu/CS488_S23/",
-  // },
   {
     name: "Software Design and Architectures",
     code: "CS 446",
@@ -55,41 +48,39 @@ const courses = [
 
 function Education() {
   return (
-    <section id="education">
-      <div className="vertical-container">
-        <div className="horizontal-container">
-          <a href="https://cs.uwaterloo.ca/">
-            <img src={waterloo} className="rounded logo" alt="University of Waterloo"/>
-          </a>
+    <div className="vbox page">
+      <div className="hbox">
+        <a href="https://cs.uwaterloo.ca/">
+          <img src={waterloo} className="rounded logo" alt="University of Waterloo"/>
+        </a>
 
-          <div className="overview">
-            <h1>Bachelor of Computer Science</h1>
+        <div className="overview">
+          <h1>Bachelor of Computer Science</h1>
 
-            <p>2018 - 2023</p>
+          <p>2018 - 2023</p>
 
-            <p>Graduated with Distinction, Honours</p>
+          <p>Graduated with Distinction, Honours</p>
 
-            <p>Diploma in French Language I</p>
-          </div>
-        </div>
-
-        <h3>Selected Coursework</h3>
-        
-        <div className="content">
-          {courses.map((course) => {
-            return (
-              <a key={course.name} href={course.link}>
-                <div className="rounded card">
-                  <h4>{course.name} ({course.code})</h4>
-                  <i>{course.term}</i>
-                  <p>Grade: {course.grade}%</p>
-                </div>
-              </a>
-            );
-          })}
+          <p>Diploma in French Language I</p>
         </div>
       </div>
-    </section>
+
+      <h3>Selected Coursework</h3>
+      
+      <div className="courses">
+        {courses.map((course) => {
+          return (
+            <a key={course.name} href={course.link}>
+              <div className="rounded card">
+                <h4>{course.name} ({course.code})</h4>
+                <i>{course.term}</i>
+                <p>Grade: {course.grade}%</p>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </div>
   );
 }
 

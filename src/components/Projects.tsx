@@ -44,39 +44,37 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="projects">
-      <div className="container">
-        {projects.map((project) => {
-          return (
-            <div key={project.title} className="project rounded">
-              <div className="card">
-                <h1 className="header">{project.title}</h1>
-                
-                <span className="vertical-separator"/>
+    <div className="vbox page">
+      {projects.map((project) => {
+        return (
+          <div key={project.title} className="hbox project">
+            <div className="card">
+              <h1 className="header">{project.title}</h1>
+              
+              <span className="vertical-separator"/>
 
-                <i>{project.language}</i>
+              <i>{project.language}</i>
 
-                {project.link === "" ? <></> :
-                  <span>
-                    <span className="vertical-separator"/>
+              {project.link === "" ? <></> :
+                <span>
+                  <span className="vertical-separator"/>
 
-                    <a href={project.link}>
-                      <img src={link} className="link" alt="Link"/>
-                    </a>
-                  </span>
-                }
+                  <a href={project.link}>
+                    <img src={link} className="link" alt="Link"/>
+                  </a>
+                </span>
+              }
 
-                {project.descriptions.map((description) => {
-                  return (<p key={description}>{description}</p>);
-                })}
-              </div>
-
-              <img src={project.image} className="image" alt={project.imageText}/>
+              {project.descriptions.map((description) => {
+                return (<p key={description}>{description}</p>);
+              })}
             </div>
-          );
-        })}
-      </div>
-    </section>
+
+            <img src={project.image} className="image" alt={project.imageText}/>
+          </div>
+        );
+      })}
+    </div>
   );
 }
 

@@ -1,38 +1,18 @@
-.switcher {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  
+#work {
   .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
-    flex-direction: column;
     animation: fadein 1s;
-    margin: 40px;
+    gap: 0px;
 
     .subtitle {
       padding-top: 10px;
       padding-bottom: 40px;
     }
 
-    .items {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 40px;
-
-      .card {
-        width: 240px;
-        height: 180px;
-      }
+    .card {
+      width: 240px;
+      height: 180px;
+      padding-top: 0px;
+      padding-bottom: 0px;
     }
 
     .logo {
@@ -43,11 +23,8 @@
   }
 
   .dot-switcher {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     gap: 20px;
-  
+
     .dot {
       height: 24px;
       width: 24px;
@@ -55,7 +32,7 @@
       border-radius: 50%;
       border-style: none;
     }
-  
+
     .dot.highlighted {
       background: rgb(212,212,212);
       background: linear-gradient(135deg, rgba(212,212,212,1) 0%, rgba(122,122,122,1) 100%);

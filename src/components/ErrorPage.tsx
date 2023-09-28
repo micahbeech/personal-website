@@ -7,7 +7,7 @@ export default function ErrorPage() {
 
   if (isRouteErrorResponse(error)) {
     return (
-      <div className="error">
+      <div className="error vbox">
         <h1>Oops!</h1>
         <p>Sorry, an unexpected error has occurred.</p>
         <p><b>{error.status}</b> {error.statusText}</p>

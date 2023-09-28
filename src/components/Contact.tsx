@@ -23,17 +23,15 @@ const contacts = [
 
 function Contact() {
   return (
-    <section id="contact">
-      <div className="contacts">
-        {contacts.map((contact) => {
-          return (
-            <a key={contact.link} href={contact.link}>
-              <img src={contact.image} className="contact" alt={contact.text}></img>
-            </a>
-          );
-        })}
-      </div>
-    </section>
+    <div className="hbox page">
+      {contacts.map((contact) => {
+        return (
+          <a key={contact.link} href={contact.link}>
+            <img src={contact.image} className="contact" alt={contact.text}></img>
+          </a>
+        );
+      })}
+    </div>
   );
 }
 

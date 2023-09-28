@@ -113,42 +113,40 @@ function Work() {
   });
 
   return (
-    <section id="work">
-      <div className="switcher">
-        <div key={job.id} className="content" id={job.id}>
-          <a href={job.url}>
-            <img src={job.logo} className="rounded logo" alt={job.name}/>
-          </a>
-          
-          <b className="subtitle">{job.date}</b>
-    
-          <div className="items">
-            {job.items.map((item) => {
-              return (
-                <div key={item.title} className="card rounded">
-                  <h2>{item.title}</h2>
-                  {item.descriptions.map((description) => { 
-                    return (<p key={description}>{description}</p>);
-                  })}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        <div className="dot-switcher">
-          {jobs.map((dotJob, dotJobIndex) => {
+    <div className="vbox page">
+      <div key={job.id} className="vbox content" id={job.id}>
+        <a href={job.url}>
+          <img src={job.logo} className="rounded logo" alt={job.name}/>
+        </a>
+        
+        <b className="subtitle">{job.date}</b>
+  
+        <div className="hbox items">
+          {job.items.map((item) => {
             return (
-              <button 
-                key={dotJob.id} 
-                className={job.id === dotJob.id ? "dot highlighted" : "dot"} 
-                onClick={() => { setSkipIter(true); setJobIndex(dotJobIndex); }}
-              />
+              <div key={item.title} className="card rounded">
+                <h2>{item.title}</h2>
+                {item.descriptions.map((description) => { 
+                  return (<p key={description}>{description}</p>);
+                })}
+              </div>
             );
           })}
         </div>
       </div>
-    </section>
+
+      <div className="hbox dot-switcher">
+        {jobs.map((dotJob, dotJobIndex) => {
+          return (
+            <button 
+              key={dotJob.id} 
+              className={job.id === dotJob.id ? "dot highlighted" : "dot"} 
+              onClick={() => { setSkipIter(true); setJobIndex(dotJobIndex); }}
+            />
+          );
+        })}
+      </div>
+    </div>
   );
 }
 

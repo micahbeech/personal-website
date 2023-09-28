@@ -10,15 +10,15 @@ function App() {
     <div className="App">
       <Navbar/>
 
-      <Home/>
+      <section id="about"><Home/></section>
 
-      <Work/>
+      <section id="work"><Work/></section>
 
-      <Projects/>
+      <section id="projects"><Projects/></section>
 
-      <Education/>
+      <section id="education"><Education/></section>
 
-      <Contact/>
+      <section id="contact"><Contact/></section>
     </div>
   );
 }

@@ -1,10 +1,4 @@
-.contacts {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 80px;
-  margin: 80px;
-
+#contact {
   .contact {
     width: 100px;
   }
