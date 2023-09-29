@@ -1,7 +1,7 @@
 import "../styles/Navbar.css";
 import { HashLink } from "react-router-hash-link";
-import profile from '../icons/profile-pic.jpg';
-import hamburger from '../icons/hamburger.png';
+import profile from '../images/profile-pic.jpg';
+import hamburger from '../images/hamburger.png';
 import { useState } from "react";
 
 function Navbar() {
@@ -22,16 +22,16 @@ function Navbar() {
       <div className={isMenuExpanded ? "navigation-menu expanded" : "navigation-menu"}>
         <ul>
           <li>
-            <HashLink smooth to="/#work" onClick={() => { setIsMenuExpanded(!isMenuExpanded); }}>Work</HashLink>
+            <HashLink smooth to="/#work" onClick={() => { setIsMenuExpanded(false); }}>Work</HashLink>
           </li>
           <li>
-            <HashLink smooth to="/#projects" onClick={() => { setIsMenuExpanded(!isMenuExpanded); }}>Projects</HashLink>
+            <HashLink smooth to="/#projects" onClick={() => { setIsMenuExpanded(false); }}>Projects</HashLink>
           </li>
           <li>
-            <HashLink smooth to="/#education" onClick={() => { setIsMenuExpanded(!isMenuExpanded); }}>Education</HashLink>
+            <HashLink smooth to="/#education" onClick={() => { setIsMenuExpanded(false); }}>Education</HashLink>
           </li>
           <li>
-            <HashLink smooth to="/#contact" onClick={() => { setIsMenuExpanded(!isMenuExpanded); }}>Contact</HashLink>
+            <HashLink smooth to="/#contact" onClick={() => { setIsMenuExpanded(false); }}>Contact</HashLink>
           </li>
         </ul>
       </div>

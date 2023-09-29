@@ -1,7 +1,7 @@
 import '../styles/Contact.css';
-import github from '../icons/github.png';
-import linkedin from '../icons/linkedin.avif';
-import email from '../icons/email.jpeg';
+import github from '../images/github.png';
+import linkedin from '../images/linkedin.avif';
+import email from '../images/email.jpeg';
 
 const contacts = [
   {

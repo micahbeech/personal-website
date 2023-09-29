@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import logo from "../icons/profile-pic.jpg";
+import logo from "../images/profile-pic.jpg";
 import "../styles/Home.css";
 
 function Home() {

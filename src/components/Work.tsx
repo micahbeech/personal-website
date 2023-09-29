@@ -1,7 +1,7 @@
 import '../styles/Work.css';
-import faire from '../icons/faire.avif';
-import codeWithChris from '../icons/codewithchris.jpeg';
-import vitalImages from '../icons/vital.jpeg';
+import faire from '../images/faire.avif';
+import codeWithChris from '../images/codewithchris.jpeg';
+import vitalImages from '../images/vital.jpeg';
 import { useState } from 'react';
 
 const jobs = [
@@ -45,6 +45,7 @@ const jobs = [
       {
         title: "Mobile App Design",
         descriptions: [
+          "Native iOS development in Swift.",
           "Envisioning, designing, and building apps from the ground up.",
         ],
       },
@@ -56,9 +57,10 @@ const jobs = [
         ],
       },
       {
-        title: "Content Creation",
+        title: "Course Content",
         descriptions: [
-          "Writing and recording course content for online iOS courses.",
+          "Content creation for paid online tutorials.",
+          "Recording video lessons and writing tutorial documentation.",
         ],
       },
     ]
@@ -87,7 +89,8 @@ const jobs = [
       {
         title: "End-to-End Testing",
         descriptions: [
-          "Assisted the QA team with E2E and regression testing to meet a crucial deadline.",
+          "Assisted the QA team with E2E and regression testing.",
+          "Automated tests created using Selenium.",
         ],
       },
     ]

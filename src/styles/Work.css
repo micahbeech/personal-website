@@ -10,7 +10,7 @@
 
     .card {
       width: 240px;
-      height: 180px;
+      min-height: 180px;
       padding-top: 0px;
       padding-bottom: 0px;
     }
@@ -37,6 +37,17 @@
     .dot.highlighted {
       background: rgb(212,212,212);
       background: linear-gradient(135deg, rgba(212,212,212,1) 0%, rgba(122,122,122,1) 100%);
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #work {
+    .dot-switcher {
+      .dot {
+        height: 40px;
+        width: 40px;
+      }
     }
   }
 }

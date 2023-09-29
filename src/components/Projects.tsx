@@ -1,22 +1,9 @@
 import '../styles/Projects.css';
-import hitron from '../icons/hitron.png';
-import veggies from '../icons/vegetables.webp';
-import house from '../icons/house.jpeg';
+import hitron from '../images/hitron.png';
+import veggies from '../images/vegetables.webp';
+import sorting from '../images/sorting.gif';
 
 const projects = [
-  {
-    title: "House Sharing",
-    language: "Kotlin",
-    descriptions: [
-      "Built for Software Design and Architectures course (CS 446), University of Waterloo, Spring 2022.",
-      "Native Android app built using Jetpack Compose, Firebase, and LiveData.",
-      "Group project (source code not available).",
-    ],
-    link: "",
-    image: house,
-    imageText: "House",
-    imageFit: "cover",
-  },
   {
     title: "Neighbourhood Garden",
     language: "Swift",
@@ -28,7 +15,7 @@ const projects = [
     link: "https://github.com/micahbeech/NeighbourhoodGarden",
     image: veggies,
     imageText: "Vegetables",
-    imageFit: "cover",
+    imageId: "garden",
   },
   {
     title: "Hitron CLI",
@@ -41,7 +28,20 @@ const projects = [
     link: "https://github.com/micahbeech/hitron-cli",
     image: hitron,
     imageText: "Hitron Router",
-    imageFit: "contain",
+    imageId: "hitron",
+  },
+  {
+    title: "Sorting Visualizer",
+    language: "Swift",
+    descriptions: [
+      "Independent project.",
+      "iOS app designed to visualize sorting algorithms.",
+      "Selection Sort, Insertion Sort, Quick Sort, Merge Sort, Heap Sort, Bubble Sort, and Bogo Sort.",
+    ],
+    link: "https://github.com/micahbeech/Sorting",
+    image: sorting,
+    imageText: "Sorting",
+    imageId: "sorting",
   },
 ]
 
@@ -67,7 +67,7 @@ function Projects() {
               })}
             </div>
 
-            <img src={project.image} className={`image ${project.imageFit}`} alt={project.imageText}/>
+            <img src={project.image} className="image" id={project.imageId} alt={project.imageText}/>
           </div>
         );
       })}

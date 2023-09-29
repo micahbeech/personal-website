@@ -1,5 +1,5 @@
 import '../styles/Education.css';
-import waterloo from '../icons/waterloo.png';
+import waterloo from '../images/waterloo.png';
 
 const courses = [
   {
