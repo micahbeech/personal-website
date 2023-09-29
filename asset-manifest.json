@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.592012be.css",
-    "main.js": "/static/js/main.1434dec0.js",
+    "main.css": "/static/css/main.2785f775.css",
+    "main.js": "/static/js/main.5d49d317.js",
+    "static/media/sorting.gif": "/static/media/sorting.42b9276bd77136fa72ce.gif",
     "static/media/profile-pic.jpg": "/static/media/profile-pic.365219c8908cca682918.jpg",
     "static/media/hitron.png": "/static/media/hitron.8352a83c1c42b64940e8.png",
     "static/media/vegetables.webp": "/static/media/vegetables.6bef61c7ded7016d5427.webp",
-    "static/media/house.jpeg": "/static/media/house.f427917f6e77cdd54a57.jpeg",
     "static/media/waterloo.png": "/static/media/waterloo.f6ad05ba3d2f1cfe15b0.png",
     "static/media/codewithchris.jpeg": "/static/media/codewithchris.69b99adbbca8b7a705cf.jpeg",
     "static/media/vital.jpeg": "/static/media/vital.cd086b65339746971c36.jpeg",
@@ -13,11 +13,11 @@
     "static/media/faire.avif": "/static/media/faire.fae0af9f7f444b59e1c4.avif",
     "static/media/linkedin.avif": "/static/media/linkedin.5c5bc1c15f4c057a562a.avif",
     "index.html": "/index.html",
-    "main.592012be.css.map": "/static/css/main.592012be.css.map",
-    "main.1434dec0.js.map": "/static/js/main.1434dec0.js.map"
+    "main.2785f775.css.map": "/static/css/main.2785f775.css.map",
+    "main.5d49d317.js.map": "/static/js/main.5d49d317.js.map"
   },
   "entrypoints": [
-    "static/css/main.592012be.css",
-    "static/js/main.1434dec0.js"
+    "static/css/main.2785f775.css",
+    "static/js/main.5d49d317.js"
   ]
 }
