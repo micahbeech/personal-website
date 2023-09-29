@@ -5,7 +5,8 @@
   
   .logo {
     object-fit: cover;
-    width: 400px;
+    width: 80vw;
+    max-width: 400px;
     height: 100px;
   }
   

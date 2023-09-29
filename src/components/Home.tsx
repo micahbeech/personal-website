@@ -5,7 +5,7 @@ import "../styles/Home.css";
 function Home() {
   return (
     <div className="hbox page">
-      <img src={logo} className="rounded" alt="Profile" width="360" height="360"/>
+      <img src={logo} className="rounded profile" alt="Profile"/>
 
       <div className="content vbox">
         <h1>Micah Beech</h1>

@@ -47,7 +47,7 @@ function Projects() {
     <div className="vbox page">
       {projects.map((project) => {
         return (
-          <div key={project.title} className="hbox project">
+          <div key={project.title} className="project">
             <div className="card">
               <h1 className="header">{project.title}</h1>
               

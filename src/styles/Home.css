@@ -10,6 +10,11 @@
     padding-left: 0px;
     padding-bottom: 24px;
   }
+
+  .profile {
+    width: 100%;
+    max-width: 360px;
+  }
 }
 
 @keyframes fadeinout {

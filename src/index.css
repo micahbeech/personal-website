@@ -4,11 +4,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(180deg, rgba(255,255,255,1) 2%, rgba(190,234,255,1) 10%, rgba(255,255,255,1) 60%);
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 html {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 section {
