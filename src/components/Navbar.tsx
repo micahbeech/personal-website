@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
     <nav className="navigation">
-      <HashLink smooth to="/#about" className="header hbox">
+      <HashLink smooth to="/#about" className="header hbox" onClick={() => { setIsMenuExpanded(false); }}>
         <img src={profile} className="logo" alt="Profile"/>
 
         <p className="name">Micah Beech</p>

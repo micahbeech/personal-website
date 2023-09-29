@@ -2,7 +2,6 @@ import '../styles/Projects.css';
 import hitron from '../icons/hitron.png';
 import veggies from '../icons/vegetables.webp';
 import house from '../icons/house.jpeg';
-import link from '../icons/link.png';
 
 const projects = [
   {
@@ -53,21 +52,15 @@ function Projects() {
         return (
           <div key={project.title} className="project">
             <div className="card">
-              <h1 className="header">{project.title}</h1>
+              {project.link === "" ? <h1 className="header">{project.title}</h1> :
+                <a href={project.link}>
+                  <h1 className="header">{project.title}</h1>
+                </a>
+              }
               
               <span className="vertical-separator"/>
 
               <i>{project.language}</i>
-
-              {project.link === "" ? <></> :
-                <span>
-                  <span className="vertical-separator"/>
-
-                  <a href={project.link}>
-                    <img src={link} className="link" alt="Link"/>
-                  </a>
-                </span>
-              }
 
               {project.descriptions.map((description) => {
                 return (<p key={description}>{description}</p>);

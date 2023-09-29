@@ -48,7 +48,7 @@ const courses = [
 
 function Education() {
   return (
-    <div className="vbox page">
+    <div className="vbox page content">
       <div className="hbox">
         <a href="https://cs.uwaterloo.ca/">
           <img src={waterloo} className="rounded logo" alt="University of Waterloo"/>

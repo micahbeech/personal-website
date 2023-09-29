@@ -1,4 +1,8 @@
 #contact {
+  .contacts {
+    margin-bottom: 120px;
+  }
+
   .contact {
     width: 100px;
   }

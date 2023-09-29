@@ -8,12 +8,11 @@ function Home() {
       <img src={logo} className="rounded profile" alt="Profile"/>
 
       <div className="content vbox">
-        <h1>Micah Beech</h1>
+        <h1 className="name">Micah Beech</h1>
 
         <AboutHeader/>
 
         <p>Industry experience in DevOps, server side, and mobile development.</p>
-        <p>Building efficient, high-quality, and secure software at scale.</p>
         <p>Singing, acting, and rock climbing in my free time.</p>
       </div>
     </div>

@@ -2,7 +2,7 @@ import '../styles/Work.css';
 import faire from '../icons/faire.avif';
 import codeWithChris from '../icons/codewithchris.jpeg';
 import vitalImages from '../icons/vital.jpeg';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const jobs = [
   {
@@ -95,22 +95,8 @@ const jobs = [
 ]
 
 function Work() {
-  const [skipIter, setSkipIter] = useState(false);
   const [jobIndex, setJobIndex] = useState(0);
   const job = jobs[jobIndex];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (skipIter) {
-        // The index was changed manually,
-        // so don't auto-rotate the job for another iteration of the timer
-        setSkipIter(false);
-      } else {
-        setJobIndex(i => (i + 1) % jobs.length);
-      }
-    }, 10000);
-    return () => clearInterval(interval);
-  });
 
   return (
     <div className="vbox page">
@@ -141,7 +127,7 @@ function Work() {
             <button 
               key={dotJob.id} 
               className={job.id === dotJob.id ? "dot highlighted" : "dot"} 
-              onClick={() => { setSkipIter(true); setJobIndex(dotJobIndex); }}
+              onClick={() => { setJobIndex(dotJobIndex); }}
             />
           );
         })}
