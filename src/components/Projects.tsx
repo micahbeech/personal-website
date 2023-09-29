@@ -16,6 +16,7 @@ const projects = [
     link: "",
     image: house,
     imageText: "House",
+    imageFit: "cover",
   },
   {
     title: "Neighbourhood Garden",
@@ -28,17 +29,20 @@ const projects = [
     link: "https://github.com/micahbeech/NeighbourhoodGarden",
     image: veggies,
     imageText: "Vegetables",
+    imageFit: "cover",
   },
   {
     title: "Hitron CLI",
     language: "Python",
     descriptions: [
+      "Independent project.",
       "Command Line Interface for interacting with the Hitron CODA-4598 modem.",
       "The tool comes with a number of customizations and thorough documentation for easy adoption by other users.",
     ],
     link: "https://github.com/micahbeech/hitron-cli",
     image: hitron,
     imageText: "Hitron Router",
+    imageFit: "contain",
   },
 ]
 
@@ -70,7 +74,7 @@ function Projects() {
               })}
             </div>
 
-            <img src={project.image} className="image" alt={project.imageText}/>
+            <img src={project.image} className={`image ${project.imageFit}`} alt={project.imageText}/>
           </div>
         );
       })}

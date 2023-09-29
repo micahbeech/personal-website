@@ -23,7 +23,7 @@ const contacts = [
 
 function Contact() {
   return (
-    <div className="hbox page">
+    <div className="contacts hbox page">
       {contacts.map((contact) => {
         return (
           <a key={contact.link} href={contact.link}>
