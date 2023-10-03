@@ -43,7 +43,7 @@ const jobs = [
     date: "2021 Internship",
     items: [
       {
-        title: "Mobile App Design",
+        title: "Mobile Design",
         descriptions: [
           "Native iOS development in Swift.",
           "Envisioning, designing, and building apps from the ground up.",
@@ -99,37 +99,41 @@ const jobs = [
 
 function Work() {
   const [jobIndex, setJobIndex] = useState(0);
-  const job = jobs[jobIndex];
 
   return (
     <div className="vbox page">
-      <div key={job.id} className="vbox content" id={job.id}>
-        <a href={job.url}>
-          <img src={job.logo} className="rounded logo" alt={job.name}/>
-        </a>
-        
-        <b className="subtitle">{job.date}</b>
-  
-        <div className="hbox items">
-          {job.items.map((item) => {
-            return (
-              <div key={item.title} className="card rounded">
-                <h2>{item.title}</h2>
-                {item.descriptions.map((description) => { 
-                  return (<p key={description}>{description}</p>);
-                })}
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      {jobs.map((job, index) => {
+        return (
+          <div key={job.id} className={index === jobIndex ? "vbox content show" : "vbox content"} id={job.id}>
+            <a href={job.url}>
+              <img src={job.logo} className="rounded logo" alt={job.name}/>
+            </a>
+            
+            <b className="subtitle">{job.date}</b>
+      
+            <div className="hbox items">
+              {job.items.map((item) => {
+                return (
+                  <div key={item.title} className="card rounded">
+                    <h2>{item.title}</h2>
+                    {item.descriptions.map((description) => { 
+                      return (<p key={description}>{description}</p>);
+                    })}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
+
 
       <div className="hbox dot-switcher">
         {jobs.map((dotJob, dotJobIndex) => {
           return (
             <button 
               key={dotJob.id} 
-              className={job.id === dotJob.id ? "dot highlighted" : "dot"} 
+              className={jobIndex === dotJobIndex ? "dot highlighted" : "dot"} 
               onClick={() => { setJobIndex(dotJobIndex); }}
             />
           );
