@@ -47,7 +47,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="vbox page">
+    <div className="vbox page projects">
       {projects.map((project) => {
         return (
           <div key={project.title} className="project">

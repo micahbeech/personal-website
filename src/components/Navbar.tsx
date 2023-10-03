@@ -22,16 +22,24 @@ function Navbar() {
       <div className={isMenuExpanded ? "navigation-menu expanded" : "navigation-menu"}>
         <ul>
           <li>
-            <HashLink smooth to="/#work" onClick={() => { setIsMenuExpanded(false); }}>Work</HashLink>
+            <HashLink smooth to="/#work" onClick={() => { setIsMenuExpanded(false); }}>
+              <p>Work</p>
+            </HashLink>
           </li>
           <li>
-            <HashLink smooth to="/#projects" onClick={() => { setIsMenuExpanded(false); }}>Projects</HashLink>
+            <HashLink smooth to="/#projects" onClick={() => { setIsMenuExpanded(false); }}>
+              <p>Projects</p>
+            </HashLink>
           </li>
           <li>
-            <HashLink smooth to="/#education" onClick={() => { setIsMenuExpanded(false); }}>Education</HashLink>
+            <HashLink smooth to="/#education" onClick={() => { setIsMenuExpanded(false); }}>
+              <p>Education</p>
+            </HashLink>
           </li>
           <li>
-            <HashLink smooth to="/#contact" onClick={() => { setIsMenuExpanded(false); }}>Contact</HashLink>
+            <HashLink smooth to="/#contact" onClick={() => { setIsMenuExpanded(false); }}>
+              <p>Contact</p>
+            </HashLink>
           </li>
         </ul>
       </div>
