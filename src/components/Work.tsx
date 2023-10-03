@@ -20,7 +20,7 @@ const jobs = [
         ],
       },
       {
-        title: "API Development",
+        title: "Server Side",
         descriptions: [
           "RESTful APIs, backend services, and database schema.",
           "Design and implementation across the SDLC.",

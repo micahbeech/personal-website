@@ -36,7 +36,7 @@ const projects = [
     descriptions: [
       "Independent project.",
       "iOS app designed to visualize sorting algorithms.",
-      "Selection Sort, Insertion Sort, Quick Sort, Merge Sort, Heap Sort, Bubble Sort, and Bogo Sort.",
+      "Implementations of Selection Sort, Insertion Sort, Quick Sort, Merge Sort, Heap Sort, Bubble Sort, and Bogo Sort.",
     ],
     link: "https://github.com/micahbeech/Sorting",
     image: sorting,

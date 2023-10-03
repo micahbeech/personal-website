@@ -15,12 +15,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: 820px) and (min-height: 820px) {
   section {
     scroll-snap-align: start;
-    min-height: 100vh;
   }
 }
 
@@ -34,7 +34,6 @@ a {
 }
 
 .card {
-  height: fit-content;
   padding: 20px;
   background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 40%);
 }
