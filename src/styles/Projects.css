@@ -42,8 +42,11 @@
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(150,150,150,1) 100%);
   }
 
-  .image#garden {
-    object-fit: cover;
+  .image#speed {
+    object-fit: contain;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 180px;
   }
 
   .image#hitron {
@@ -75,6 +78,11 @@
       border-top-right-radius: 0px;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
+    }
+
+    .image#speed {
+      padding-left: 0px;
+      padding-right: 0px;
     }
   }
 }

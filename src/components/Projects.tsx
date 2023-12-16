@@ -1,21 +1,21 @@
 import '../styles/Projects.css';
+import speed from '../images/internet-speed.png';
 import hitron from '../images/hitron.png';
-import veggies from '../images/vegetables.webp';
 import sorting from '../images/sorting.gif';
 
 const projects = [
   {
-    title: "Neighbourhood Garden",
-    language: "Swift",
+    title: "Internet Speed Monitor",
+    language: "Python",
     descriptions: [
       "Independent project.",
-      "Pure SwiftUI mobile app using frameworks including Swinject, SwiftGen, SwiftLint, SwiftyMocky.",
-      "Facilitates local sharing of fresh produce, aiming to promote sustainable lifestyles and community connection.",
+      "Tooling to track your internet speed over time and visualize the results.",
+      "The project includes email support to deliver reports directly into your inbox and an installation wizard for quick setup.",
     ],
-    link: "https://github.com/micahbeech/NeighbourhoodGarden",
-    image: veggies,
-    imageText: "Vegetables",
-    imageId: "garden",
+    link: "https://github.com/micahbeech/speedtest-monitor",
+    image: speed,
+    imageText: "Internet Speed",
+    imageId: "speed",
   },
   {
     title: "Hitron CLI",
