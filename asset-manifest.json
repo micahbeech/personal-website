@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.fe64a9f2.css",
-    "main.js": "/static/js/main.002fac11.js",
+    "main.css": "/static/css/main.199ac3c1.css",
+    "main.js": "/static/js/main.cc2a55d0.js",
     "static/media/sorting.gif": "/static/media/sorting.022a17c979132d0f3c0d.gif",
     "static/media/profile-pic.jpg": "/static/media/profile-pic.365219c8908cca682918.jpg",
     "static/media/hitron.png": "/static/media/hitron.8352a83c1c42b64940e8.png",
-    "static/media/vegetables.webp": "/static/media/vegetables.6bef61c7ded7016d5427.webp",
     "static/media/waterloo.png": "/static/media/waterloo.f6ad05ba3d2f1cfe15b0.png",
     "static/media/codewithchris.jpeg": "/static/media/codewithchris.69b99adbbca8b7a705cf.jpeg",
     "static/media/vital.jpeg": "/static/media/vital.cd086b65339746971c36.jpeg",
     "static/media/email.jpeg": "/static/media/email.c726544795961ea6f7c5.jpeg",
+    "static/media/internet-speed.png": "/static/media/internet-speed.690339284111a994ce7c.png",
     "static/media/faire.avif": "/static/media/faire.fae0af9f7f444b59e1c4.avif",
     "static/media/linkedin.avif": "/static/media/linkedin.5c5bc1c15f4c057a562a.avif",
     "index.html": "/index.html",
-    "main.fe64a9f2.css.map": "/static/css/main.fe64a9f2.css.map",
-    "main.002fac11.js.map": "/static/js/main.002fac11.js.map"
+    "main.199ac3c1.css.map": "/static/css/main.199ac3c1.css.map",
+    "main.cc2a55d0.js.map": "/static/js/main.cc2a55d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe64a9f2.css",
-    "static/js/main.002fac11.js"
+    "static/css/main.199ac3c1.css",
+    "static/js/main.cc2a55d0.js"
   ]
 }
