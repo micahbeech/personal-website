@@ -1,6 +1,8 @@
 body {
   margin: 0;
-  font-family: 'FrankoLight';
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-snap-type: y mandatory;
@@ -18,7 +20,7 @@ section {
   min-height: 100vh;
 }
 
-@media only screen and (min-width: 820px) and (min-height: 860px) {
+@media only screen and (min-width: 1180px) and (min-height: 860px) {
   section {
     scroll-snap-align: start;
   }

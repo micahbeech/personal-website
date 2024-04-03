@@ -18,22 +18,22 @@
     justify-items: center;
     gap: 40px;
     width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
   }
   
   .card {
-    width: 180px;
+    width: 240px;
     background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(252,252,252,1) 100%);
     padding-top: 1px;
     padding-bottom: 1px;
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 1000px) {
   #education {
     .courses {
       gap: 20px;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr) );
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr) );
     }
 
     .logo {

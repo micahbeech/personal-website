@@ -10,8 +10,8 @@
     }
 
     .card {
-      width: 240px;
-      min-height: 180px;
+      width: 300px;
+      min-height: 200px;
       padding-top: 0px;
       padding-bottom: 0px;
     }
@@ -46,7 +46,7 @@
   }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 1180px) {
   #work {
     overflow-x: clip;
     
@@ -65,15 +65,15 @@
         }
 
         .card:not(:first-child) {
-          margin-left: -220px;
+          margin-left: -280px;
         }
 
-        .card:hover {
+        /* .card:hover {
           transform: translateY(-20px);
-        }
+        } */
 
         .card:hover ~ .card {
-          left: 220px;
+          left: 280px;
         }
       }
     }
@@ -86,9 +86,21 @@
 
 @media only screen and (max-width: 560px) {
   #work {
-    .content > .items > .card {
-      width: 180px;
-      min-height: 220px;
+    .content {
+      .items {
+        .card {
+          width: 180px;
+          min-height: 280px;
+        }
+
+        .card:not(:first-child) {
+          margin-left: -180px;
+        }
+  
+        .card:hover ~ .card {
+          left: 180px;
+        }
+      }
     }
   }
 }
