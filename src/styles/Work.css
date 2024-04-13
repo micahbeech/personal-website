@@ -68,10 +68,6 @@
           margin-left: -280px;
         }
 
-        /* .card:hover {
-          transform: translateY(-20px);
-        } */
-
         .card:hover ~ .card {
           left: 280px;
         }
@@ -89,8 +85,8 @@
     .content {
       .items {
         .card {
-          width: 180px;
-          min-height: 280px;
+          width: 160px;
+          min-height: 300px;
         }
 
         .card:not(:first-child) {
