@@ -86,7 +86,7 @@
       .items {
         .card {
           width: 160px;
-          min-height: 300px;
+          min-height: 320px;
         }
 
         .card:not(:first-child) {
